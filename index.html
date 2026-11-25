@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wahat Al Mabrook | Spice, Rice & Grocery Store</title>
+  <meta name="description"
+    content="Wahat Al Mabrook - authentic spices, premium basmati rice, pulses, dry fruits and everyday grocery essentials. Build your order and send it to us on WhatsApp.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Amiri:wght@700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/logo-emblem.png">
+</head>
+
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path
+        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.199.534 1.286.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.177.182-.076.356.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z" />
+      <path
+        d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.179L2 22l4.981-1.396C8.423 21.493 10.153 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.273c-1.637 0-3.155-.478-4.432-1.302l-.318-.207-2.967.83.826-2.923-.223-.332C4.004 14.999 3.5 13.551 3.5 12c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5-3.813 8.273-8.5 8.273z" />
+    </symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 4h2l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L21 8H6.2" />
+      <circle cx="9.5" cy="20" r="1.2" />
+      <circle cx="17.5" cy="20" r="1.2" />
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.5-3.5" />
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round">
+      <path d="M6 6l12 12M18 6 6 18" />
+    </symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M12 5v14M5 12h14" />
+    </symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M5 12h14" />
+    </symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" />
+    </symbol>
+    <symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M15 18l-6-6 6-6" />
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2" />
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z" />
+    </symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 6h11v10H3zM14 9h4l3 3v4h-7" />
+      <circle cx="7" cy="17.5" r="1.8" />
+      <circle cx="17.5" cy="17.5" r="1.8" />
+    </symbol>
+    <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 9l1.5-5h13L20 9M4 9v11h16V9M4 9h16M9 20v-6h6v6" />
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12.5l4.5 4.5L19 7.5" />
+    </symbol>
+  </svg>
+
+  <!-- ===================== Header ===================== -->
+  <header class="site-header" id="header">
+    <div class="container navbar">
+      <a href="#home" class="brand-link" aria-label="Wahat Al Mabrook Home">
+        <img src="assets/logo-emblem.png" alt="" class="brand-emblem">
+        <span class="brand-name">WAHAT AL <span class="highlight-mabrook">MABROOK</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#visit" class="nav-link">Visit Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn cart-toggle" aria-label="Open cart" data-open-cart>
+          <svg><use href="#i-cart" /></svg>
+          <span class="cart-count" hidden>0</span>
+        </button>
+        <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" aria-label="Mobile Navigation">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#shop" class="mobile-link">Shop</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#visit" class="mobile-link">Visit Us</a>
+    <a href="#" class="btn btn-whatsapp" data-wa="Hello Wahat Al Mabrook, I have a question.">
+      <svg><use href="#i-whatsapp" /></svg><span>WhatsApp Us</span>
+    </a>
+  </div>
+
+  <main>
+    <!-- ===================== Hero ===================== -->
+    <section class="hero" id="home">
+      <img src="assets/images/hero-spices.jpg" alt="" class="hero-bg">
+      <video class="hero-bg hero-video" id="heroVideo" data-src="assets/hero.mp4" data-webm="assets/hero.webm" poster="assets/images/hero-spices.jpg"
+        muted loop playsinline preload="none" aria-hidden="true"></video>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow eyebrow-light">Wholesale &amp; Retail · Buteena, Sharjah</span>
+        <h1 class="hero-title">AUTHENTIC FLAVOURS.<br><span>BEYOND BORDERS.</span></h1>
+        <p class="hero-text">Spices, masalas, rice, pulses, nuts, dates, oils and Kerala specials. Pick what you need,
+          choose the quantity and send your order to us on WhatsApp. Free delivery within 3 km.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop Products</a>
+          <a href="#visit" class="btn btn-ghost">Visit Our Store</a>
+        </div>
+        <ul class="hero-badges">
+          <li><svg><use href="#i-truck" /></svg>Free delivery within 3 km</li>
+          <li><svg><use href="#i-clock" /></svg>Open daily 8:30 AM – 12 AM</li>
+          <li><svg><use href="#i-check" /></svg>Best quality &amp; prices</li>
+          <li><svg><use href="#i-store" /></svg>Wholesale &amp; retail</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Shop ===================== -->
+    <section class="shop" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">From our shelves</span>
+            <h2 class="section-title">SHOP PRODUCTS</h2>
+          </div>
+          <label class="search-box">
+            <svg><use href="#i-search" /></svg>
+            <input type="search" id="searchInput" placeholder="Search products…" autocomplete="off"
+              aria-label="Search products">
+          </label>
+        </div>
+
+        <div class="filter-wrap" id="filterWrap">
+          <button class="icon-btn filter-arrow prev" id="filterPrev" aria-label="Scroll categories left" hidden><svg><use href="#i-back" /></svg></button>
+          <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter by category"><!-- JS --></div>
+          <button class="icon-btn filter-arrow next" id="filterNext" aria-label="Scroll categories right" hidden><svg><use href="#i-back" /></svg></button>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"><!-- JS --></div>
+        <p class="empty-state" id="emptyState" hidden>No products match your search.</p>
+        <div class="more-wrap">
+          <button class="btn btn-ghost-dark" id="showMore" hidden><span>Show more</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== About / Store ===================== -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="assets/storefront-night.jpg"
+            alt="Wahat Al Mabrook store front at night with shelves stocked with spices, grains and rice"
+            loading="lazy">
+        </div>
+        <div class="about-text">
+          <div class="arabic-name">واحة المبروك للتجارة ذ.م.م</div>
+          <span class="eyebrow eyebrow-light">Our store</span>
+          <h2 class="section-title light">GOOD FOOD STARTS WITH GOOD INGREDIENTS.</h2>
+          <p>From authentic spices to everyday essentials, Wahat Al <span class="highlight-mabrook">Mabrook</span>
+            brings quality products closer to your kitchen. Walk into our store in Buteena, Sharjah to find fresh spices
+            and masalas ground in-house, open bins of rice and pulses, roasted nuts and snacks, dates, coffee, oils and
+            Kerala essentials. We serve families and businesses, wholesale and retail, and we'll even grate fresh
+            coconut for you.</p>
+          <ul class="value-list">
+            <li><strong>Quality</strong><span>Carefully selected for aroma, colour and flavour.</span></li>
+            <li><strong>Variety</strong><span>Spices, rice, pulses, nuts and essentials in one place.</span></li>
+            <li><strong>Value</strong><span>Fair prices that make home cooking rewarding.</span></li>
+            <li><strong>Service</strong><span>Friendly, knowledgeable help every visit.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Store gallery ===================== -->
+    <section class="gallery" id="gallery" aria-label="Inside our store">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Inside our store</span>
+            <h2 class="section-title">FRESH ON EVERY SHELF.</h2>
+          </div>
+          <p class="gallery-lead">Real photos from our Buteena store. Tap any photo to see it full size.</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"><!-- JS --></div>
+        <div class="more-wrap gallery-more">
+          <button class="btn btn-ghost-dark" id="galleryAll"><span>View all photos</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== How ordering works ===================== -->
+    <section class="steps" aria-label="How ordering works">
+      <div class="container steps-grid">
+        <div class="step"><span class="step-num">1</span>
+          <h3>Pick a product</h3>
+          <p>Browse the shelves and tap any product for a closer look.</p>
+        </div>
+        <div class="step"><span class="step-num">2</span>
+          <h3>Choose quantity</h3>
+          <p>Choose grams, kilos, litres or pieces and add it to your cart.</p>
+        </div>
+        <div class="step"><span class="step-num">3</span>
+          <h3>Send on WhatsApp</h3>
+          <p>Send your list to our team. We confirm the price and deliver free within 3 km.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Visit / Contact ===================== -->
+    <section class="visit" id="visit">
+      <div class="container visit-grid">
+        <div>
+          <span class="eyebrow">Location & hours</span>
+          <h2 class="section-title">COME VISIT US.</h2>
+          <p class="visit-lead">Quality ingredients are closer than you think. Find us in person or reach out
+            directly.</p>
+          <div class="visit-actions">
+            <a href="#" class="btn btn-primary" data-maps target="_blank" rel="noopener noreferrer">Get
+              Directions</a>
+            <a href="#" class="btn btn-whatsapp" data-wa="Hello Wahat Al Mabrook, I would like directions to your store."
+              target="_blank" rel="noopener noreferrer">
+              <svg><use href="#i-whatsapp" /></svg><span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+        <ul class="info-list">
+          <li><svg><use href="#i-pin" /></svg>
+            <div><span class="info-label">Address</span><span data-info="address"></span></div>
+          </li>
+          <li><svg><use href="#i-clock" /></svg>
+            <div><span class="info-label">Opening hours</span><span data-info="hours"></span></div>
+          </li>
+          <li><svg><use href="#i-phone" /></svg>
+            <div><span class="info-label">Phone</span><span data-info="phone"></span></div>
+          </li>
+          <li><svg><use href="#i-whatsapp" /></svg>
+            <div><span class="info-label">WhatsApp</span><span data-info="whatsapp"></span></div>
+          </li>
+          <li><svg><use href="#i-truck" /></svg>
+            <div><span class="info-label">Delivery</span><span>Free delivery within 3 km of our store</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="map-card">
+          <iframe src="https://maps.google.com/maps?q=Wahat%20Al%20Mabrook%20Trading%2C%20Buteena%2C%20Sharjah&z=16&output=embed" title="Wahat Al Mabrook on Google Maps" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <a href="#" class="map-link" data-maps target="_blank" rel="noopener noreferrer"
+            aria-label="Open directions to Wahat Al Mabrook in Google Maps">
+            <span class="map-chip"><svg><use href="#i-pin" /></svg>Tap for directions</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-emblem.png" alt="" class="brand-emblem">
+        <span class="brand-name">WAHAT AL <span class="highlight-mabrook">MABROOK</span> TRADING LLC</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#shop">Shop</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#visit">Visit Us</a>
+        <a href="#" data-social="instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#" data-social="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </nav>
+      <p class="footer-tag">Spices beyond borders · Open daily 8:30 AM – 12 AM · Free delivery within 3 km · Wholesale &amp; retail</p>
+      <p class="footer-copy">&copy; <span id="year"></span> Wahat Al Mabrook. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <button class="icon-btn to-top" id="toTop" aria-label="Back to top"><svg><use href="#i-back" /></svg></button>
+
+  <a href="#" class="floating-wa" data-wa="Hello Wahat Al Mabrook, I have an inquiry about your products."
+    target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg><use href="#i-whatsapp" /></svg>
+  </a>
+
+  <!-- ===================== Product viewer ===================== -->
+  <div class="overlay product-overlay" id="productOverlay" hidden>
+    <div class="product-viewer" role="dialog" aria-modal="true" aria-labelledby="viewerName">
+      <button class="icon-btn viewer-close" data-close aria-label="Close">
+        <svg><use href="#i-close" /></svg>
+      </button>
+      <div class="viewer-media">
+        <img id="viewerImg" src="" alt="">
+      </div>
+      <div class="viewer-body">
+        <!-- Step 1: details -->
+        <div class="viewer-step" data-step="details">
+          <span class="viewer-cat" id="viewerCat"></span>
+          <h3 class="viewer-name" id="viewerName"></h3>
+          <p class="viewer-desc" id="viewerDesc"></p>
+          <button class="btn btn-primary btn-block" id="addToCartBtn">
+            <svg><use href="#i-cart" /></svg><span>Add to Cart</span>
+          </button>
+        </div>
+
+        <!-- Step 2: quantity -->
+        <div class="viewer-step" data-step="qty" hidden>
+          <button class="back-link" id="qtyBack"><svg><use href="#i-back" /></svg>Back</button>
+          <h3 class="viewer-name small" id="qtyName"></h3>
+          <p class="qty-label" id="qtyLabel">How much do you need?</p>
+          <div class="size-chips" id="sizeChips"></div>
+          <div class="qty-stepper">
+            <button class="icon-btn" id="qtyMinus" aria-label="Decrease"><svg><use href="#i-minus" /></svg></button>
+            <label class="qty-input-wrap">
+              <input type="number" id="qtyInput" min="50" step="50" inputmode="numeric" aria-label="Quantity">
+              <span id="qtyUnit">g</span>
+            </label>
+            <button class="icon-btn" id="qtyPlus" aria-label="Increase"><svg><use href="#i-plus" /></svg></button>
+          </div>
+          <p class="qty-readable" id="qtyReadable"></p>
+          <button class="btn btn-primary btn-block" id="confirmAddBtn">
+            <svg><use href="#i-check" /></svg><span>Confirm & Add</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== Cart drawer ===================== -->
+  <div class="overlay cart-overlay" id="cartOverlay" hidden>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-head">
+        <h3 id="cartTitle">Your Cart</h3>
+        <button class="icon-btn" data-close aria-label="Close cart"><svg><use href="#i-close" /></svg></button>
+      </div>
+      <ul class="cart-items" id="cartItems"></ul>
+      <div class="cart-empty" id="cartEmpty">
+        <svg><use href="#i-cart" /></svg>
+        <p>Your cart is empty.</p>
+        <a href="#shop" class="btn btn-ghost-dark" data-close>Browse products</a>
+      </div>
+      <div class="cart-foot" id="cartFoot">
+        <div class="cart-summary"><span id="cartSummary"></span><button class="link-btn" id="clearCart">Clear
+            cart</button></div>
+        <a href="#" class="btn btn-whatsapp btn-block" id="sendOrder" target="_blank" rel="noopener noreferrer">
+          <svg><use href="#i-whatsapp" /></svg><span>Send Order on WhatsApp</span>
+        </a>
+        <p class="cart-note">We confirm availability and price on WhatsApp. Free delivery within 3 km.</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ===================== Gallery lightbox ===================== -->
+  <div class="overlay lightbox" id="lightbox" hidden>
+    <button class="icon-btn lightbox-close" data-close aria-label="Close"><svg><use href="#i-close" /></svg></button>
+    <figure class="lightbox-fig">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+    <button class="icon-btn lightbox-nav prev" id="lbPrev" aria-label="Previous photo"><svg><use href="#i-back" /></svg></button>
+    <button class="icon-btn lightbox-nav next" id="lbNext" aria-label="Next photo"><svg><use href="#i-back" /></svg></button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
